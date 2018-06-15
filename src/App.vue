@@ -5,7 +5,9 @@
         <img src="./assets/logo.png">ddd
       </el-header>
       <el-container>
-        <el-aside width="200px">Aside</el-aside>
+        <el-aside width="200px">
+          <LeftMenu/>
+        </el-aside>
         <el-container>
           <el-main>
             <HelloWorld msg="Welcome to Your Vue.js App"/>
@@ -28,11 +30,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
+import LeftMenu from './components/layout/LeftMenu.vue';
 
 export default {
   name: 'app',
   components: {
     HelloWorld,
+    LeftMenu,
   },
 };
 </script>
